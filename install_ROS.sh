@@ -11,6 +11,10 @@ sudo apt install -y python-rosdep python-rosinstall python-rosinstall-generator 
 sudo rosdep init
 rosdep update
 
+# Install Python3
+sudo apt install python3-pip python3-all-dev python3-rospkg
+sudo apt install ros-melodic-desktop-full --fix-missing
+
 # Edit .bashrc
 echo -e "
 source /opt/ros/melodic/setup.bash
