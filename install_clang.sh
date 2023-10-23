@@ -14,4 +14,4 @@ sudo apt install -y clang clangd-10
 echo "Clang version:"
 clang --version
 echo "Clangd version:"
-clangd --version
+clangd-10 --version
