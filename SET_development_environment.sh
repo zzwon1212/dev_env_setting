@@ -8,3 +8,4 @@
 ./install_gvim.sh
 # ./install_ROS.sh
 ./setting_python3
+# ./install_OpenCV.sh
