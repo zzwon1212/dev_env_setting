@@ -6,5 +6,5 @@
 ./install_git.sh
 ./install_gvim.sh
 # ./install_ROS.sh
-./setting_python3
+./setting_python3.sh
 # ./install_OpenCV.sh
