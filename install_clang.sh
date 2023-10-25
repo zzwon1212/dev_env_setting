@@ -8,10 +8,10 @@ sudo apt install -y build-essential
 # Install Clang and Clangd
 echo "Installing Clang and Clangd..."
 sudo bash -c "$(wget -O - https://apt.llvm.org/llvm.sh)"
-sudo apt install -y clang clangd-10
+sudo apt install -y clang clangd
 
 # Verify installed versions
 echo "Clang version:"
 clang --version
 echo "Clangd version:"
-clangd-10 --version
+clangd --version
