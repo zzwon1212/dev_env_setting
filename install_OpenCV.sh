@@ -14,9 +14,10 @@ pip3 install opencv-python
 
 # Download OpenCV
 echo "Downloading OpenCV..."
-mkdir -p ~/workspace && cd ~/workspace
+mkdir -p ~/workspace/OpenCV && cd ~/workspace/OpenCV
 git clone https://github.com/opencv/opencv.git
-mkdir -p ~/workspace/opencv/build && cd ~/workspace/opencv/build
+git clone https://github.com/opencv/opencv_contrib.git
+mkdir -p ~/workspace/OpenCV/opencv/build && cd ~/workspace/OpenCV/opencv/build
 
 # Build OpenCV
 echo "Building OpenCV..."
@@ -28,6 +29,7 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
     -D INSTALL_C_EXAMPLES=ON \
     -D INSTALL_PYTHON_EXAMPLES=ON \
     -D OPENCV_GENERATE_PKGCONFIG=ON \
+    -D OPENCV_EXTRA_MODULES_PATH=~/workspace/OpenCV/opencv_contrib/modules \
     ..
 make -j7
 
