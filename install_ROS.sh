@@ -12,17 +12,17 @@ sudo rosdep init
 rosdep update
 
 # Install Python3
-sudo apt install python3-pip python3-all-dev python3-rospkg
-sudo apt install ros-melodic-desktop-full --fix-missing
+sudo apt install -y python3-pip python3-all-dev python3-rospkg
+sudo apt install -y ros-melodic-desktop-full --fix-missing
 
 # Edit .bashrc
 echo -e "
 source /opt/ros/melodic/setup.bash
 
 # Setting environment variables for ROS tasks
-alias cm='cd ~/xycar_ws && catkin_make'
+alias cm='cd ~/workspace/xycar_ws && catkin_make'
 source /opt/ros/melodic/setup.bash
-source ~/xycar_ws/devel/setup.bash
+source ~/workspace/xycar_ws/devel/setup.bash
 export ROS_MASTER_URI=http://localhost:11311
 export ROS_HOSTNAME=localhost
 " >> ~/.bashrc
