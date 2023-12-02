@@ -10,7 +10,7 @@ sudo apt install -y curl
 echo "Installing Git..."
 sudo apt install -y git
 git config --global user.email "zzwon1212@gmail.com"
-git config --global user.name "Jiwon"
+git config --global user.name "zzwon1212"
 git config --global init.defaultBranch main
 
 # # Install GitHub CLI
