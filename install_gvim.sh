@@ -1,8 +1,9 @@
 #!/bin/bash
 
 # Install gVim
-echo "Installing gVim..."
-sudo apt install -y vim-gnome
+echo "Installing vim and vim-gtk3..."
+sudo apt install -y vim
+sudo apt install -y vim-gtk3
 
 # Install jellybeans colorscheme
 echo "Installing jellybeans colorscheme..."
